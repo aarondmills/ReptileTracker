@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  birthdate: MyString
+  birth_weight: MyString
+  length: MyString
+  birth_location: MyString
+  breeder_name: MyString
+  breeder_email: MyString
+
+two:
+  name: MyString
+  birthdate: MyString
+  birth_weight: MyString
+  length: MyString
+  birth_location: MyString
+  breeder_name: MyString
+  breeder_email: MyString

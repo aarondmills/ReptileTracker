@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @animal.name %>
+</p>
+
+<p>
+  <b>Birthdate:</b>
+  <%= @animal.birthdate %>
+</p>
+
+<p>
+  <b>Birth weight:</b>
+  <%= @animal.birth_weight %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @animal.length %>
+</p>
+
+<p>
+  <b>Birth location:</b>
+  <%= @animal.birth_location %>
+</p>
+
+<p>
+  <b>Breeder name:</b>
+  <%= @animal.breeder_name %>
+</p>
+
+<p>
+  <b>Breeder email:</b>
+  <%= @animal.breeder_email %>
+</p>
+
+
+<%= link_to 'Edit', edit_animal_path(@animal) %> |
+<%= link_to 'Back', animals_path %>
