@@ -1,0 +1,64 @@
+<%= form_for(@cleaning) do |f| %>
+  <% if @cleaning.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cleaning.errors.count, "error") %> prohibited this cleaning from being saved:</h2>
+
+      <ul>
+      <% @cleaning.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    
+      <%= f.text_field :date %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :fresh_water %><br />
+    
+      <%= f.check_box :fresh_water %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :fresh_bedding %><br />
+    
+      <%= f.check_box :fresh_bedding %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :heat_check %><br />
+    
+      <%= f.check_box :heat_check %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :handled_animal %><br />
+    
+      <%= f.check_box :handled_animal %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    
+      <%= f.text_area :notes %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :animal_id %><br />
+    
+      <%= f.text_field :animal_id %>
+    
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<script>
+  var date_field = $("#cleaning_date");
+  date_field.datepicker({ defaultDate: date_field.val(), dateFormat: 'yy-mm-dd' });
+</script>
+

@@ -20,4 +20,19 @@ class Animal < ActiveRecord::Base
                :through               => :child_parent_relationships,
                :source                => :child
 
+	belongs_to 	 :species
+	
+	belongs_to   :breed
+
+	has_many 		 :sheds
+	
+	has_many 		 :inspections
+
+	has_many 		 :feedings
+
+	has_many 		 :cleanings
+
+
+	accepts_nested_attributes_for :sheds, :inspections, :feedings
+
 end

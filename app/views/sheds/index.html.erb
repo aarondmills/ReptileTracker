@@ -1,0 +1,29 @@
+<h1>Listing sheds</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Description</th>
+    <th>Full shed</th>
+    <th>Length</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sheds.each do |shed| %>
+  <tr>
+    <td><%= shed.date %></td>
+    <td><%= shed.description %></td>
+    <td><%= shed.full_shed %></td>
+    <td><%= shed.length %></td>
+    <td><%= link_to 'Show', shed %></td>
+    <td><%= link_to 'Edit', edit_shed_path(shed) %></td>
+    <td><%= link_to 'Destroy', shed, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Shed', new_shed_path %>

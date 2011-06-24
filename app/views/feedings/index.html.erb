@@ -1,0 +1,25 @@
+<h1>Listing feedings</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Successful</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @feedings.each do |feeding| %>
+  <tr>
+    <td><%= feeding.date %></td>
+    <td><%= feeding.successful %></td>
+    <td><%= link_to 'Show', feeding %></td>
+    <td><%= link_to 'Edit', edit_feeding_path(feeding) %></td>
+    <td><%= link_to 'Destroy', feeding, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Feeding', new_feeding_path %>

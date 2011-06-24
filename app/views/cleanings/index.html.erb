@@ -1,0 +1,35 @@
+<h1>Listing cleanings</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Fresh water</th>
+    <th>Fresh bedding</th>
+    <th>Heat check</th>
+    <th>Handled animal</th>
+    <th>Notes</th>
+    <th>Animal</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cleanings.each do |cleaning| %>
+  <tr>
+    <td><%= cleaning.date %></td>
+    <td><%= cleaning.fresh_water %></td>
+    <td><%= cleaning.fresh_bedding %></td>
+    <td><%= cleaning.heat_check %></td>
+    <td><%= cleaning.handled_animal %></td>
+    <td><%= cleaning.notes %></td>
+    <td><%= cleaning.animal_id %></td>
+    <td><%= link_to 'Show', cleaning %></td>
+    <td><%= link_to 'Edit', edit_cleaning_path(cleaning) %></td>
+    <td><%= link_to 'Destroy', cleaning, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cleaning', new_cleaning_path %>

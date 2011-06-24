@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @inspection.date %>
+</p>
+
+<p>
+  <b>Animal:</b>
+  <%= @inspection.animal_id %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @inspection.length %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @inspection.weight %>
+</p>
+
+<p>
+  <b>Disease:</b>
+  <%= @inspection.disease %>
+</p>
+
+<p>
+  <b>Temperment:</b>
+  <%= @inspection.temperment %>
+</p>
+
+<p>
+  <b>Mouth:</b>
+  <%= @inspection.mouth %>
+</p>
+
+<p>
+  <b>Vent:</b>
+  <%= @inspection.vent %>
+</p>
+
+<p>
+  <b>Eyes:</b>
+  <%= @inspection.eyes %>
+</p>
+
+<p>
+  <b>Belly:</b>
+  <%= @inspection.belly %>
+</p>
+
+<p>
+  <b>Outcome:</b>
+  <%= @inspection.outcome %>
+</p>
+
+
+<%= link_to 'Edit', edit_inspection_path(@inspection) %> |
+<%= link_to 'Back', inspections_path %>

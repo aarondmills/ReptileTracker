@@ -1,0 +1,52 @@
+<%= form_for(@price) do |f| %>
+  <% if @price.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@price.errors.count, "error") %> prohibited this price from being saved:</h2>
+
+      <ul>
+      <% @price.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :breed_id %><br />
+    
+      <%= f.text_field :breed_id %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :quarterly_report_id %><br />
+    
+      <%= f.text_field :quarterly_report_id %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    
+      <%= f.text_field :date %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    
+      <%= f.text_field :price %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :source %><br />
+    
+      <%= f.text_field :source %>
+    
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<script>
+  var date_field = $("#price_date");
+  date_field.datepicker({ defaultDate: date_field.val(), dateFormat: 'yy-mm-dd' });
+</script>
+

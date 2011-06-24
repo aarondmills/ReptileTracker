@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: MyString
+  animal_id: 1
+  length: MyString
+  weight: MyString
+  disease: false
+  temperment: MyString
+  mouth: false
+  vent: false
+  eyes: false
+  belly: MyString
+  outcome: MyText
+
+two:
+  date: MyString
+  animal_id: 1
+  length: MyString
+  weight: MyString
+  disease: false
+  temperment: MyString
+  mouth: false
+  vent: false
+  eyes: false
+  belly: MyString
+  outcome: MyText

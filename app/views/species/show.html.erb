@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @species.name %>
+</p>
+
+<p>
+  <b>Latin name:</b>
+  <%= @species.latin_name %>
+</p>
+
+<p>
+  <b>Suborder:</b>
+  <%= @species.suborder_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_species_path(@species) %> |
+<%= link_to 'Back', species_index_path %>

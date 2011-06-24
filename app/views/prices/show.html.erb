@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Breed:</b>
+  <%= @price.breed_id %>
+</p>
+
+<p>
+  <b>Quarterly report:</b>
+  <%= @price.quarterly_report_id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @price.date %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @price.price %>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%= @price.source %>
+</p>
+
+
+<%= link_to 'Edit', edit_price_path(@price) %> |
+<%= link_to 'Back', prices_path %>

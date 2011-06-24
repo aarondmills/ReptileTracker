@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @cleaning.date %>
+</p>
+
+<p>
+  <b>Fresh water:</b>
+  <%= @cleaning.fresh_water %>
+</p>
+
+<p>
+  <b>Fresh bedding:</b>
+  <%= @cleaning.fresh_bedding %>
+</p>
+
+<p>
+  <b>Heat check:</b>
+  <%= @cleaning.heat_check %>
+</p>
+
+<p>
+  <b>Handled animal:</b>
+  <%= @cleaning.handled_animal %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @cleaning.notes %>
+</p>
+
+<p>
+  <b>Animal:</b>
+  <%= @cleaning.animal_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_cleaning_path(@cleaning) %> |
+<%= link_to 'Back', cleanings_path %>

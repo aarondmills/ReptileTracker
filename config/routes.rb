@@ -1,4 +1,20 @@
 Snaketracker::Application.routes.draw do
+  resources :prices
+
+  resources :quarterly_reports
+
+  resources :cleanings
+
+  resources :inspections
+
+  resources :feedings
+
+  resources :sheds
+
+  resources :breeds
+
+  resources :species
+
   resources :animals
 
   # The priority is based upon order of creation:

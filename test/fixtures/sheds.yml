@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: MyString
+  description: MyString
+  full_shed: false
+  length: MyString
+
+two:
+  date: MyString
+  description: MyString
+  full_shed: false
+  length: MyString

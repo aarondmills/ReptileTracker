@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @shed.date %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @shed.description %>
+</p>
+
+<p>
+  <b>Full shed:</b>
+  <%= @shed.full_shed %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @shed.length %>
+</p>
+
+
+<%= link_to 'Edit', edit_shed_path(@shed) %> |
+<%= link_to 'Back', sheds_path %>

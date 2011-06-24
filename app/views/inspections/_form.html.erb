@@ -1,0 +1,88 @@
+<%= form_for(@inspection) do |f| %>
+  <% if @inspection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@inspection.errors.count, "error") %> prohibited this inspection from being saved:</h2>
+
+      <ul>
+      <% @inspection.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    
+      <%= f.text_field :date %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :animal_id %><br />
+    
+      <%= f.text_field :animal_id %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :length %><br />
+    
+      <%= f.text_field :length %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br />
+    
+      <%= f.text_field :weight %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :disease %><br />
+    
+      <%= f.check_box :disease %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :temperment %><br />
+    
+      <%= f.text_field :temperment %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :mouth %><br />
+    
+      <%= f.check_box :mouth %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :vent %><br />
+    
+      <%= f.check_box :vent %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :eyes %><br />
+    
+      <%= f.check_box :eyes %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :belly %><br />
+    
+      <%= f.text_field :belly %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :outcome %><br />
+    
+      <%= f.text_area :outcome %>
+    
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<script>
+  var date_field = $("#inspection_date");
+  date_field.datepicker({ defaultDate: date_field.val(), dateFormat: 'yy-mm-dd' });
+</script>
+

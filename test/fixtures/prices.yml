@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  breed_id: 1
+  quarterly_report_id: 1
+  date: MyString
+  price: 1.5
+  source: MyString
+
+two:
+  breed_id: 1
+  quarterly_report_id: 1
+  date: MyString
+  price: 1.5
+  source: MyString

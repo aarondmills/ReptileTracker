@@ -1,0 +1,34 @@
+<%= form_for(@feeding) do |f| %>
+  <% if @feeding.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@feeding.errors.count, "error") %> prohibited this feeding from being saved:</h2>
+
+      <ul>
+      <% @feeding.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    
+      <%= f.text_field :date %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :successful %><br />
+    
+      <%= f.check_box :successful %>
+    
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<script>
+  var date_field = $("#feeding_date");
+  date_field.datepicker({ defaultDate: date_field.val(), dateFormat: 'yy-mm-dd' });
+</script>
+

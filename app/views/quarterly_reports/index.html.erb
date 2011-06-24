@@ -1,0 +1,27 @@
+<h1>Listing quarterly_reports</h1>
+
+<table>
+  <tr>
+    <th>Market</th>
+    <th>Name</th>
+    <th>Body</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @quarterly_reports.each do |quarterly_report| %>
+  <tr>
+    <td><%= quarterly_report.market_id %></td>
+    <td><%= quarterly_report.name %></td>
+    <td><%= quarterly_report.body %></td>
+    <td><%= link_to 'Show', quarterly_report %></td>
+    <td><%= link_to 'Edit', edit_quarterly_report_path(quarterly_report) %></td>
+    <td><%= link_to 'Destroy', quarterly_report, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Quarterly report', new_quarterly_report_path %>

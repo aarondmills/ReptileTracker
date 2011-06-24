@@ -1,0 +1,46 @@
+<%= form_for(@shed) do |f| %>
+  <% if @shed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shed.errors.count, "error") %> prohibited this shed from being saved:</h2>
+
+      <ul>
+      <% @shed.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    
+      <%= f.text_field :date %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    
+      <%= f.text_field :description %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :full_shed %><br />
+    
+      <%= f.check_box :full_shed %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :length %><br />
+    
+      <%= f.text_field :length %>
+    
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<script>
+  var date_field = $("#shed_date");
+  date_field.datepicker({ defaultDate: date_field.val(), dateFormat: 'yy-mm-dd' });
+</script>
+

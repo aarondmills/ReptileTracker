@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: MyString
+  fresh_water: false
+  fresh_bedding: false
+  heat_check: false
+  handled_animal: false
+  notes: MyText
+  animal_id: 1
+
+two:
+  date: MyString
+  fresh_water: false
+  fresh_bedding: false
+  heat_check: false
+  handled_animal: false
+  notes: MyText
+  animal_id: 1
