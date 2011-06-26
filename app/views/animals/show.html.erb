@@ -1,15 +1,15 @@
+<% @pagetitle = "#{@animal.name} the #{@animal.species.name}" %>
 <p id="notice"><%= notice %></p>
 
 <h2><%= @animal.name %> - The <%= @animal.species.name %></h2>
 <div class="line"></div>
 
-<p>This animal was born on <%= @animal.birthdate if @animal.birthdate %>, weighting in at <%= @animal.birth_weight if @animal.birth_weight %> at <%= @animal.length %> long. He was born in <%= @animal.birth_location if @animal.birth_location %> and bread by <a href="mailto:<%= @animal.breeder_email if @animal.breeder_email %>"><%= @animal.breeder_name %></a>.
+<p><%= @animal.name %> the <%= @animal.breed.name %> <%= @animal.species.name %>   was born on <%= @animal.birthdate if @animal.birthdate %>, weighting in at <%= @animal.birth_weight if @animal.birth_weight %> at <%= @animal.length %> long. He was born in <%= @animal.birth_location if @animal.birth_location %> and bread by <a href="mailto:<%= @animal.breeder_email if @animal.breeder_email %>"><%= @animal.breeder_name %></a>.
 </p>
 
 
 
-<%= link_to 'Edit This Animal', edit_animal_path(@animal) %> |
-<%= link_to 'Back', animals_path %>
+<%= link_to 'Edit Basic Animal Details', edit_animal_path(@animal) %>
 
 <h3>Feeding Record</h3>
 <div class="line"></div>

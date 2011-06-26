@@ -12,15 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :date %><br />
+    <%= f.label :date, "When did you feed #{@animal.name}?" %><br />
     
       <%= f.text_field :date %>
     
   </div>
   <div class="field">
-    <%= f.label :successful %><br />
+<p>Did he/she eat the foot?</p>
     
-      <%= f.check_box :successful %>
+      <%= f.check_box :successful %> Yes
     
   </div>
 	<div class="field" style="display:none;">
@@ -28,7 +28,7 @@
     
       <%= f.text_field :animal_id %>
     
-  </div>
+  </div><br />
   <div class="actions">
     <%= f.submit %>
   </div>

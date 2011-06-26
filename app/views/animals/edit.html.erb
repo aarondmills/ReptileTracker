@@ -1,4 +1,5 @@
-<h1>Editing animal</h1>
+<% @pagetitle = "Editing #{@animal.name}" %>
+<h2>Editing <%= @animal.name %></h2>
 <div class="line"></div>
 <%= render 'form' %>
 
