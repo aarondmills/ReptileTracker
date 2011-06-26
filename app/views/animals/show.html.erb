@@ -1,40 +1,55 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @animal.name %>
-</p>
+<h2><%= @animal.name %> - The <%= @animal.species.name %></h2>
+<div class="line"></div>
 
-<p>
-  <b>Birthdate:</b>
-  <%= @animal.birthdate %>
-</p>
-
-<p>
-  <b>Birth weight:</b>
-  <%= @animal.birth_weight %>
-</p>
-
-<p>
-  <b>Length:</b>
-  <%= @animal.length %>
-</p>
-
-<p>
-  <b>Birth location:</b>
-  <%= @animal.birth_location %>
-</p>
-
-<p>
-  <b>Breeder name:</b>
-  <%= @animal.breeder_name %>
-</p>
-
-<p>
-  <b>Breeder email:</b>
-  <%= @animal.breeder_email %>
+<p>This animal was born on <%= @animal.birthdate if @animal.birthdate %>, weighting in at <%= @animal.birth_weight if @animal.birth_weight %> at <%= @animal.length %> long. He was born in <%= @animal.birth_location if @animal.birth_location %> and bread by <a href="mailto:<%= @animal.breeder_email if @animal.breeder_email %>"><%= @animal.breeder_name %></a>.
 </p>
 
 
-<%= link_to 'Edit', edit_animal_path(@animal) %> |
+
+<%= link_to 'Edit This Animal', edit_animal_path(@animal) %> |
 <%= link_to 'Back', animals_path %>
+
+<h3>Feeding Record</h3>
+<div class="line"></div>
+<p>Inspections are the written record of the health and growth of the animal. They leave a record to track potential health issues, and ensure regular attention to health that may not be noticed during feeding or other handling. 
+<table class="tbl">
+  <thead>
+    <td class="td-1">Date</td>
+    <td class="td-2">Did he/she eat?</td>
+
+  </thead>
+
+<% @feedings.each do |feeding| %>
+  <tr class="<%= cycle("even", "odd") %>">
+    <td class="td-1"><%= feeding.date %></td>
+    <td class="td-2"><% if feeding.successful == TRUE %><%= image_tag "green_checklist.png", :height => "10" %>
+		<% else %>No
+		<% end %></td>
+  </tr>
+
+<% end %>
+</table><br /><br />
+<p><br /><br /><br /><br /><strong>Create a <%= link_to "new feeding record", new_animal_feeding_path(@animal) %>.</strong></p>
+
+<h3>Inspection Record</h3>
+<div class="line"></div>
+<p>Inspections are the written record of the health and growth of the animal. They leave a record to track potential health issues, and ensure regular attention to health that may not be noticed during feeding or other handling. 
+<table class="tbl">
+  <thead>
+    <td class="td-1">Date</td>
+    <td class="td-2">Weight</td>
+		<td class="td-3">Length</td>
+  </thead>
+
+<% @inspections.each do |inspection| %>
+  <tr class="<%= cycle("even", "odd") %>">
+    <td class="td-1"><%= inspection.date %></td>
+    <td class="td-2"><% if inspection.weight %><%= inspection.weight %><% else puts "Not Taken" end %></td>
+    <td class="td-3"><%= inspection.length %></td>
+  </tr>
+
+<% end %>
+</table><br /><br />
+<p><br /><br /><br /><br /><br /><br /><strong>Create a <%= link_to "new inspection record", new_animal_inspection_path(@animal) %>.</strong></p>

@@ -1,35 +1,30 @@
-<h1>Listing animals</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Birthdate</th>
-    <th>Birth weight</th>
-    <th>Length</th>
-    <th>Birth location</th>
-    <th>Breeder name</th>
-    <th>Breeder email</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+	<div class="breadcrumbs"> <!-- breadcrumbs here -->
+		<a href="index.html">Home</a> / Animals
+	</div>
+
+<h2>My Animals</h2>   
+        <div class="intro">
+	        <p>On this page you will find all the animals listed in your Reptile Tracker collection. You can edit their details, or add new animals.</p>
+        </div>
+        <div class="line"></div>
+
+<table class="tbl">
+  <thead>
+    <td class="td-1">Name</td>
+    <td class="td-2">Birthdate</td>
+		<td class="td-3">Options</td>
+  </thead>
 
 <% @animals.each do |animal| %>
-  <tr>
-    <td><%= animal.name %></td>
-    <td><%= animal.birthdate %></td>
-    <td><%= animal.birth_weight %></td>
-    <td><%= animal.length %></td>
-    <td><%= animal.birth_location %></td>
-    <td><%= animal.breeder_name %></td>
-    <td><%= animal.breeder_email %></td>
-    <td><%= link_to 'Show', animal %></td>
-    <td><%= link_to 'Edit', edit_animal_path(animal) %></td>
-    <td><%= link_to 'Destroy', animal, :confirm => 'Are you sure?', :method => :delete %></td>
+  <tr class="<%= cycle("even", "odd") %>">
+    <td class="td-1"><%= animal.name %> the <%= animal.species.name %></td>
+    <td class="td-2">Born: <%= animal.birthdate %></td>
+    <td class="td-3"><%= link_to 'Show', animal %>, <%= link_to 'Edit', edit_animal_path(animal) %>, <%= link_to 'Destroy', animal, :confirm => 'Are you sure?', :method => :delete %> </td>
   </tr>
 <% end %>
 </table>
 
-<br />
+<br /><br />
 
-<%= link_to 'New Animal', new_animal_path %>
+<h5 ><%= link_to 'Enter New Animal', new_animal_path %></h5>

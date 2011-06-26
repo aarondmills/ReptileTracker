@@ -1,0 +1,345 @@
+/* This file contains the TEAL SKIN styles */
+/* Author: Goldenworks / Starshade @ Themeforest */
+
+h1, h2, h3, h4, h5, h6 {
+	color:#242424;	
+}
+a, #footer a:hover, .fbottom a:hover, .sf-menu li a:hover strong {
+	color:#08bfd5;
+}
+input, textarea {
+	border:1px solid #e0e0e0;	
+}
+.sdata-left .more-link {
+	background:url(header_readmore.png) no-repeat 0 0;
+	color:#fff;	
+}
+.main, .intdec {
+	background:#fff url(topbody_bg.jpg) repeat-x top center;	
+}
+/* start checklist backgrounds */
+.green-checklist li {
+	background:url(green_checklist.png) no-repeat 7px -2px;	
+}
+.orange-checklist li {
+	background:url(orange_checklist.png) no-repeat 7px -2px;	
+}
+.yellow-checklist li {
+	background:url(yellow_checklist.png) no-repeat 7px -2px;	
+}
+.pink-checklist li {
+	background:url(pink_checklist.png) no-repeat 7px -2px;	
+}
+.red-checklist li {
+	background:url(red_checklist.png) no-repeat 7px -2px;	
+}
+.purple-checklist li {
+	background:url(purple_checklist.png) no-repeat 7px -2px;	
+}
+.blue-checklist li {
+	background:url(blue_checklist.png) no-repeat 7px -2px;	
+}
+/* end checklist backgrounds */
+
+/* start footer list */
+.fbox ul li a {
+	background:url(fbullet.png) no-repeat 11px 7px;			
+}
+.fbox ul li a:hover, .fbox ul .factive a {
+	background:#1a1a1a url(fbullet.png) no-repeat 11px -165px;
+	color:#08bfd5 !important;
+}
+/* end footer list */
+
+/* start sidebar */
+.box ul li a {
+	background:url(sidebar_bullet.png) no-repeat 11px 7px;
+	color:#242424;
+}
+.box ul li a:hover, .box ul .active a {
+	background:#ebebeb url(sidebar_bullet.png) no-repeat 11px -165px;
+	color:#08bfd5 !important;
+}
+.sidebar .rss li a {
+	background:url(rss_bg.png) no-repeat 11px 4px;
+	color:#242424;
+}
+.sidebar .rss ul li a:hover {
+	background:#ebebeb url(rss_bg.png) no-repeat 11px -46px;
+	color:#f27200 !important;	
+}
+.box h5 {
+	border-bottom:1px solid #e9e9e9;
+	background:url(sb_decoration.png) no-repeat 0 0;
+}
+.sidebar h5 {
+	color:#242424;
+}
+.widget_tag_cloud a {
+	color:#242424;
+	background:#ebebeb;
+}
+.widget_tag_cloud a:hover {
+	background:#08bfd5;
+	color:#fff;	
+}
+/* end sidebar */
+
+/* start homepage half boxes */
+.hb-body {
+	background:#fff;	
+}
+.hb-body h5 {
+	color:#08bfd5;	
+}
+/* end homepage half boxes */
+
+.intro {
+	color:#212121;	
+}
+.line {
+	border-top:1px solid #e9e9e9;	
+}
+/* start submit button*/
+.submit-btn {
+	background:#242424;
+	color:#fff;		
+}
+.submit-btn:hover {
+	background:#08bfd5;	
+}
+/* end submit button*/
+.image {
+	border:1px solid #fff;
+}
+.alignleft, .alignright {
+	background:url(border_texture.gif) repeat top center;
+	padding:10px;	
+}
+/* start text highlights */
+.highlight1 {
+	background:#fffa7d;
+	padding:2px 1px 2px 1px;	
+}
+.highlight2 {
+	background:#242424;
+	color:#fff;
+	padding:2px 1px 2px 1px;	
+}
+/* end text highlights */
+
+/* START table styles */
+.tbl thead tr td { /* table header background */
+	background:#08bfd5;	
+	color:#fff;
+	font-weight:bold;
+}
+.tbl tbody tr td { /* table row line */
+	border-bottom:1px solid #dadada;
+}
+.tbl .odd td { /* table background for odd rows 1, 3, 5... */
+	background:#fff;
+}
+.tbl .even td { /* table background for even rows 2, 4, 6... */
+	background:#f2f2f2;
+}
+/* END table styles */
+
+blockquote {
+	background:url(border_texture.gif) repeat top left;
+	border-bottom:1px solid #dadada;	
+}
+.quote-decoration {
+	background:url(quote_decoration.png) no-repeat top left;	
+}
+
+/* start message boxes types */
+.greenbox-wrapper {
+	border:1px solid #c4e48a;
+	float:left;
+}
+.greenbox {
+	background:url(green_texture.gif) repeat top center;
+	border:1px solid #fff;
+	color:#2c611c;
+}
+.greenbox a {
+	color:#2c611c;
+	text-decoration:underline;	
+}
+.bluebox-wrapper {
+	border:1px solid #9fe6f1;
+	float:left;
+}
+.bluebox {
+	background:url(blue_texture.gif) repeat top center;
+	border:1px solid #fff;
+	color:#086887;
+}
+.bluebox a {
+	color:#086887;
+	text-decoration:underline;	
+}
+.orangebox-wrapper {
+	border:1px solid #eddfa1;
+	float:left;
+}
+.orangebox {
+	background:url(orange_texture.gif) repeat top center;
+	border:1px solid #fff;
+	color:#b78b06;
+}
+.orangebox a {
+	color:#b78b06;
+	text-decoration:underline;	
+}
+.redbox-wrapper {
+	border:1px solid #ffd1d1;
+	float:left;
+}
+.redbox {
+	background:url(red_texture.gif) repeat top center;
+	border:1px solid #fff;
+	color:#ec3939;
+}
+.redbox a {
+	color:#ec3939;
+	text-decoration:underline;	
+}
+/* end message boxes types */
+
+/* code tag decoration */
+code {
+	background:#f7f7f7 url(code_bg.gif) repeat scroll 0 0;
+	border:1px solid #ddd;
+	border-bottom:0px;
+}
+/* start blog styles */
+.bcateg {
+	color:#868686;	
+}
+.blog-block h2 a {
+	color:#242424;	
+}
+.blog-block h2 a:hover {
+	color:#242424;	
+	background:#f3f3f3;
+}
+.bdate {
+	background:url(default_circle.png) no-repeat top left;	
+	color:#fff;		
+}
+.btn-oposite a {
+	background:#242424;	
+	color:#fff;			
+}
+.btn-oposite a:hover {
+	background:#08bfd5;		/* when hover, it swithes to the main skin color */
+	color:#fff !important;		
+}
+.blog-block .more-link {
+	background:#08bfd5;
+	color:#fff;		
+}
+.blog-block .more-link:hover {
+	background:#242424;	
+	color:#fff;			
+}
+/* end blog styles */
+
+/* start pagination */
+.wp-pagenavi {
+	padding:1px;	
+}
+.wp-pagenavi a, .wp-pagenavi a:link,.wp-pagenavi a:visited,.wp-pagenavi a:active,.wp-pagenavi span.pages,.wp-pagenavi span.current,.wp-pagenavi span.extend {
+	background:#fff;
+	color:#424242;		
+}
+.wp-pagenavi a:hover, .wp-pagenavi span.current {	
+	background:#08bfd5;
+	color:#fff !important;
+}
+/* end pagination */
+
+.inputError, input[type="text"].inputError {
+	border:1px solid #eda0a0;
+}
+
+/* a couple of elements with background texture */
+.social ul, .blog-comment-fieldset, .port1-list li, .port2-list li, .gallery-list li, .border-texture, .toggle-content .block, .wp-pagenavi, .half-box {
+	background:url(border_texture.gif) repeat top left;		
+}
+/* start portfolio styles */
+.hframe-details {
+	background:url(pdetails.png) no-repeat top left;
+}
+.hframe-zoom {
+	background:url(pzoom.png) no-repeat top left;
+}
+.hframe-video {
+	background:url(pvideo.png) no-repeat top left;
+}
+.port1-content {
+	background:#fff;	
+}
+.port1-content h3 a {
+	color:#242424;
+}
+.port1-content h3 a:hover {
+	color:#242424;
+	background:#f3f3f3;	
+	text-decoration:none;
+}
+.port1-list .more-link {
+	color:#fff;
+	background:url(default_circle.png) no-repeat top left;	
+}
+/* end portfolio styles */
+
+.hrame-nojs h4 a {
+	color:#242424;
+}
+.hrame-nojs h4 a:hover {
+	color:#08bfd5;		
+}
+.port1-list li img, .port2-list li img, .gallerylist li img, .gallery-list li img {
+	border:1px solid #fff;		
+}
+/* start toggle styles */
+h6.toggle a {
+	color:#242424;
+	border-bottom:1px solid #dadada;
+	background:url(toggle_icon.png) no-repeat 0 6px;
+}
+.toggle-content .block {
+	border-bottom:1px solid #dadada;		
+}
+/* end toggle styles */
+.btn-skin a {
+	background:#08bfd5;	
+}
+/* start footer styles */
+#footer {
+	background:#050505 url(ftop_decoration.gif) repeat-x top center;		
+}
+.fbox h6 {
+	color:#eaeaea;
+}
+/* end footer styles */
+
+/* start tabs */
+.idTabs {
+	border-bottom:3px solid #050505;	
+}
+.idTabs li {
+	background:#ebebeb;
+}
+.idTabs li a:hover {
+	background:#08bfd5;
+	color:#fff;		
+}
+.idTabs li .selected, .idTabs li .selected:hover {
+	background:#050505;
+	color:#fff;	
+}
+/* end tabs */

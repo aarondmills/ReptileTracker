@@ -25,7 +25,8 @@ class InspectionsController < ApplicationController
   # GET /inspections/new.xml
   def new
     @inspection = Inspection.new
-
+		@animal = Animal.find(params[:animal_id])
+		@inspection.animal_id = @animal.id
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @inspection }
@@ -41,6 +42,8 @@ class InspectionsController < ApplicationController
   # POST /inspections.xml
   def create
     @inspection = Inspection.new(params[:inspection])
+
+		
 
     respond_to do |format|
       if @inspection.save

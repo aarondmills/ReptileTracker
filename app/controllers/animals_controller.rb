@@ -14,6 +14,8 @@ class AnimalsController < ApplicationController
   # GET /animals/1.xml
   def show
     @animal = Animal.find(params[:id])
+		@inspections = Inspection.where("animal_id = ?", params[:id])
+		@feedings = Feeding.where("animal_id = ?", params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

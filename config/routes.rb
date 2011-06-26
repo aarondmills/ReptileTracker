@@ -1,4 +1,8 @@
 Snaketracker::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   resources :prices
 
   resources :quarterly_reports
@@ -15,7 +19,11 @@ Snaketracker::Application.routes.draw do
 
   resources :species
 
-  resources :animals
+  resources :animals do
+		resources :inspections
+		resources :feedings
+	end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

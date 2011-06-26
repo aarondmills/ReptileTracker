@@ -25,7 +25,8 @@ class FeedingsController < ApplicationController
   # GET /feedings/new.xml
   def new
     @feeding = Feeding.new
-
+		@animal = Animal.find(params[:animal_id])
+		@feeding.animal_id = @animal.id
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @feeding }

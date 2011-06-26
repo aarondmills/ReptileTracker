@@ -1,0 +1,12 @@
+.sdata-left,
+.fbox-wrapper,
+.int-body,
+.contact-fieldset .submit-btn,
+.port2-list li,
+.hframe p,
+.port1-list .more-link .more-text,
+.gallery,
+.gallery-list li,
+.sdata-left .more-link .more-text {
+	display:inline;	
+}

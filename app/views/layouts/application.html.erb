@@ -1,14 +1,200 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <title>Snaketracker</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<%= yield %>
+<%= stylesheet_link_tag 'style' %>
+<noscript><%= stylesheet_link_tag 'noscript' %></noscript>
+<!--[if IE 6]>
+<%= stylesheet_link_tag 'ie6' %>
+<![endif]-->
+
+<%= javascript_include_tag "jquery", "prettyPhoto/js/jquery.prettyPhoto", "cufon-yui", "Ubuntu_400.font", "Ubuntu_700.font", "Lobster_14_400.font", "custom" %>
+
+<script type="text/javascript">
+	Cufon.replace('h2, h3, h4, h6, #menu-wrapper > ul > li > a > span', { fontFamily: 'Ubuntu Bold', hover: 'true' });	
+	Cufon.replace('.intro', { fontFamily: 'Ubuntu', hover: 'true' });		
+	Cufon.replace('h5, h1, .breadcrumbs, blockquote p, .blog-categ', { fontFamily: 'Lobster 1.4', hover: 'true' });	
+
+</script>
+  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag 'scaffold', 'ui-lightness/jquery-ui-1.8.12.custom' %>
+  <%= javascript_include_tag 'jquery-1.5.1.min', 'jquery-ui-1.8.12.custom.min.js' %>
+  <%= csrf_meta_tag %>
+
+<title>Royalty - About</title>
+</head>
+
+
+<body>
+<div class="int-wrapper" id="backtop">
+    
+    <div id="fwidth-interior">
+        <div class="int-wrapper">
+            <!-- start interior top area -->               
+            <div class="interior-top">
+                <div class="intop-container">
+                    <div class="sinfo-wrapper">
+                        <div class="sinfo">
+                            <div class="intitle-left"><h1>My Animals</h1></div>
+                        </div>
+                    </div>
+                    <%= image_tag "intop_img.jpg", :class => "the-image" %>
+                </div>
+            </div>          
+            <!-- end interior top area -->                       
+                        
+        </div>
+
+    </div>
+        
+    <div class="left">
+        <!-- start top menu -->
+        <div id="menu-wrapper">
+            <div id="logo"><a href="index.html"><%= image_tag "logo.png" %></a></div>
+            <ul class="sf-menu sf-vertical">
+                <li><a href="index.html"><span>Home</span><strong>Back to homepage</strong></a></li>
+                <li><a href="about.html"><span>About</span><strong>Things you should know</strong></a></li>
+                <li><a href="bloglist.html"><span>Blog</span><strong>News and famous ideas</strong></a>
+                    <ul>
+                        <li><a href="bloglist.html">Blog list</a></li>
+                        <li><a href="blogdetail.html">Blog detail</a></li>                                                                                                                              
+                    </ul>
+                </li>
+                <li><a href="portfolio_1.html"><span>Portfolio</span><strong>Check out our amazing works</strong></a>
+                    <ul>
+                        <li><a href="portfolio_1.html">Portfolio type 1</a></li>
+                        <li><a href="portfolio_2.html">Portfolio type 2</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>     
+                        <li><a href="#">Just send...</a>
+                            <ul>
+                                <li><a href="#">me a sign!</a></li>                                                                                                                       
+                            </ul>                            
+                        </li>
+                    </ul>               
+                </li>
+                <li><a href="contact.php"><span>Contact</span><strong>Get in touch with us</strong></a></li>                                                                               
+            </ul>
+            <div class="menu-add"></div>
+        </div>
+        <!-- end top menu --> 
+        
+        <!-- start sidebar -->
+        <div class="sidebar">
+			<div class="box">
+            	<h5>Search site</h5>
+                <form action="#" method="get">
+                    <fieldset class="search-fieldset">
+                            <input type="text" name="s" id="s" class="search-input"  />
+                        	<input type="submit" value="search &raquo;" name="search" class="submit-btn" />  
+                    </fieldset>
+                </form>  
+            </div>
+
+			<div class="box">
+            	<h5>Blog categories</h5>
+				<ul>
+                	<li><a href="#">Inspiration</a></li>
+                	<li class="active"><a href="#">Photography</a></li>
+                	<li><a href="#">Spa</a></li>
+                	<li><a href="#">General stuff</a></li>
+                	<li><a href="#">Poetry and other stories</a></li>                                                            
+                </ul>
+            </div>     
+            
+			<div class="box rss">
+            	<h5>Rss feeds</h5>
+				<ul>
+                	<li><a href="#">Posts RSS</a></li>
+                	<li><a href="#">Comments RSS</a></li>
+                </ul>
+            </div> 
+                        
+			<div class="box">
+            	<h5>About us</h5>
+				<p>Sea ex nostrud vivendum, pro in dolore alienum, ex denique delectus assentior eam. Modus evertitur vix eu, id appareat molestiae signiferumque mea, sit epicurei expetenda ad.</p>
+            </div>        
+            
+			<div class="box flickr">
+            	<h5><strong>Flick<span>r</span></strong> showcase</h5>
+				<ul>
+                	<li><a href="#"><img src="images/flickr_img.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="images/flickr_img.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="images/flickr_img.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="images/flickr_img.jpg" alt="" /></a></li>                                                            
+                </ul>
+            </div>                                       
+
+        </div>
+        <!-- end sidebar -->    
+    </div>
+    
+
+    <div class="right">
+        
+
+				<%= yield %>
+        
+
+       
+  </div></div>
+<div class="intdec"></div>
+
+<!-- start footer -->
+<div id="footer">
+	<div class="footer-wrapper">
+    	<!-- start 4 footer widgets wrapper -->
+    	<div class="fbox-wrapper">
+        	<div class="fbox flogo">
+                <div class="fbox-content">
+					<img src="images/grey_logo.jpg" alt="" />
+                    <p>Royalty is a handcrafted premium theme created using valid HTML &amp; CCS and enhanced with jQuery.</p>
+                </div>
+            </div>		
+        	<div class="fbox">
+            	<h6>Blogroll</h6>
+                <div class="fbox-content">
+                    <ul>
+                        <li><a href="#">Site Templates</a></li>
+                        <li><a href="#">WordPress</a></li>
+                        <li class="factive"><a href="#">PSD Templates</a></li>       
+                        <li><a href="#">Joomla</a></li>
+                        <li><a href="#">Email Templates</a></li>
+                        <li><a href="#">Magento</a></li>  
+                        <li><a href="#">Misc</a></li>                                                                                                        
+                    </ul>
+                </div>
+            </div>	
+        	<div class="fbox">
+            	<h6>About us</h6>
+                <div class="fbox-content">
+                    <p>Eos at dicant iriure. Te suscipit voluptatibus sit. No aliquyam antiopam postulant qui, at facilis phaedrum aliquando nam.</p>
+                    <p>Ut eros nobis nemore per, ad pri quas omnes. Ex clita noster pri, pro clita maiestatis te.</p>      
+                </div>          
+            </div>	
+        	<div class="fbox fconnect">
+            	<h6>Connect with us!</h6>
+                <div class="fbox-content">
+                    <p>Keep in touch with us on your favourite social networks:</p>                    
+                    <ul>
+                        <li><a href="#"><img src="images/twitter_32.png" alt="twitter" /></a></li>
+                        <li><a href="#"><img src="images/facebook_32.png" alt="facebook" /></a></li>
+                        <li><a href="#"><img src="images/linkedin_32.png" alt="linkedin" /></a></li>     
+                        <li><a href="#"><img src="images/flickr_32.png" alt="flickr" /></a></li>                                                                                  
+                    </ul>
+                </div>
+            </div>	                                    
+		</div>    
+    	<!-- end 4 footer widgets wrapper -->                
+    </div>
+</div>
+<div class="fbottom">
+	<div class="fbottom-wrapper">
+    	<p>Copyright &copy; 2011 Royalty. All rights reserved. Proudly created by <a href="#">Golden Works</a>.</p>
+        <div class="backtotop"><a href="#backtop">back to top</a></div>             
+    </div>
+</div>
+<!-- end footer -->
 
 </body>
 </html>

@@ -1,0 +1,74 @@
+h5, 
+blockquote p, 
+.breadcrumbs, 
+.bcateg, 
+.bdate p, 
+.port1-list .more-link,
+.sdata-left .more-link {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;	
+}
+h5 {
+	letter-spacing:-1px;
+	font-size:24px;
+}
+.sdata-left .more-link {
+	font-size:20px;
+	line-height:24px;
+}
+.sdata-left .more-link .more-text {
+	margin-left:18px;	
+}
+.box h5 {
+	padding:6px 0 6px 44px;
+}
+.breadcrumbs {
+	font-size:16px;
+	font-style:italic;	
+}
+blockquote p {
+	font-size:18px;
+	letter-spacing:-0.4px;
+}
+.bcateg {
+	font-size:16px;
+}
+h2 {
+	letter-spacing:-1px;
+}
+.bdate p {
+	line-height:16px;	
+	font-size:14px;
+	margin:20px 0 0 0;
+}
+.bdate p span {
+	font-size:40px;
+}
+.port1-list .more-link .more-text {
+	margin:25px 0 0 13px;
+	font-size:18px;
+}
+.hrame-nojs h4 {
+	position:absolute;
+	top:20px;
+	left:20px;
+	float:none;
+	width:290px;
+	padding:0;
+	margin:0;
+}
+.hrame-nojs h4 a {
+	background:url(../images/sinfo_bg.png) repeat left top;
+	display:block;
+	padding:8px 14px 8px 14px;	
+	text-decoration:none;
+}
+.hrame-nojs h4 a:hover {
+	background:#fff;	
+}
+.gallery-nojs {
+	position:absolute;
+	left:10px;
+	top:10px;
+	z-index:10;
+}

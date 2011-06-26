@@ -1,0 +1,371 @@
+/* This file contains the default DARK YELLOW SKIN styles */
+/* Author: Goldenworks / Starshade @ Themeforest */
+
+body {
+	background:#171717;
+	color:#afafaf;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:#d2d2d2;	
+}
+.intitle-left h1, .sdata-left, .sdata-left h5 {
+	color:#242424;	
+}
+a, #footer a:hover, .fbottom a:hover, .sf-menu li a:hover strong {
+	color:#fff600;
+}
+input, textarea {
+	border:1px solid #353535;
+	background:#1a1a1a;
+	color:#afafaf !important;
+}
+.sdata-left .more-link {
+	background:url(header_readmore.png) no-repeat 0 0;
+	color:#171717;	
+}
+.sdata-left .more-link:hover {
+	color:#fff;	
+}
+.main, .intdec {
+	background:#171717 url(topbody_bg.gif) repeat-x top center;	
+}
+/* start checklist backgrounds */
+.green-checklist li {
+	background:url(green_checklist.png) no-repeat 7px -2px;	
+}
+.orange-checklist li {
+	background:url(orange_checklist.png) no-repeat 7px -2px;	
+}
+.yellow-checklist li {
+	background:url(yellow_checklist.png) no-repeat 7px -2px;	
+}
+.pink-checklist li {
+	background:url(pink_checklist.png) no-repeat 7px -2px;	
+}
+.red-checklist li {
+	background:url(red_checklist.png) no-repeat 7px -2px;	
+}
+.purple-checklist li {
+	background:url(purple_checklist.png) no-repeat 7px -2px;	
+}
+.blue-checklist li {
+	background:url(blue_checklist.png) no-repeat 7px -2px;	
+}
+/* end checklist backgrounds */
+
+/* start footer list */
+.fbox ul li a {
+	background:url(fbullet.png) no-repeat 11px 7px;			
+}
+.fbox ul li a:hover, .fbox ul .factive a {
+	background:#1a1a1a url(fbullet.png) no-repeat 11px -165px;
+	color:#fff600 !important;
+}
+/* end footer list */
+
+/* start sidebar */
+.box ul li a {
+	background:url(sidebar_bullet.png) no-repeat 11px 7px;
+	color:#d2d2d2;
+}
+.box ul li a:hover, .box ul .active a {
+	background:#242424 url(sidebar_bullet.png) no-repeat 11px -165px;
+	color:#fff600 !important;
+}
+.sidebar .rss li a {
+	background:url(rss_bg.png) no-repeat 11px 4px;
+	color:#d2d2d2;
+}
+.sidebar .rss ul li a:hover {
+	background:#242424 url(rss_bg.png) no-repeat 11px -46px;
+	color:#f27200 !important;	
+}
+.box h5 {
+	border-bottom:1px solid #2d2d2d;
+	background:url(sb_decoration.png) no-repeat 0 0;
+}
+.sidebar h5 {
+	color:#afafaf;
+}
+.widget_tag_cloud a {
+	color:#d2d2d2;
+	background:#2d2d2d;
+}
+.widget_tag_cloud a:hover {
+	background:#fff600;
+	color:#242424;	
+}
+/* end sidebar */
+
+/* start homepage half boxes */
+.hb-body {
+	background:#171717;	
+}
+.hb-body h5 {
+	color:#fff600;	
+}
+/* end homepage half boxes */
+
+.intro {
+	color:#a2a2a2;	
+}
+.line {
+	border-top:1px solid #2d2d2d;	
+}
+
+/* start submit button*/
+.submit-btn {
+	background:#242424;
+	color:#fff;		
+}
+.submit-btn:hover {
+	background:#fff600;	
+	color:#242424 !important;;			
+}
+/* end submit button*/
+.image {
+	border:1px solid #424242;
+}
+.alignleft, .alignright {
+	background:url(border_texture.gif) repeat top center;
+	padding:10px;	
+}
+/* start text highlights */
+.highlight1 {
+	background:#fff600;
+	color:#242424;
+	padding:2px 1px 2px 1px;	
+}
+.highlight2 {
+	background:#242424;
+	color:#fff;
+	padding:2px 1px 2px 1px;	
+}
+/* end text highlights */
+
+/* START table styles */
+.tbl thead tr td { /* table header background */
+	background:#fff600;	
+	color:#424242;
+	font-weight:bold;
+}
+.tbl tbody tr td { /* table row line */
+	border-bottom:1px solid #424242;
+}
+.tbl .odd td { /* table background for odd rows 1, 3, 5... */
+	background:#171717;
+}
+.tbl .even td { /* table background for even rows 2, 4, 6... */
+	background:#242424;
+}
+/* END table styles */
+
+blockquote {
+	background:url(border_texture.gif) repeat top left;
+	border-bottom:1px solid #424242;	
+}
+.quote-decoration {
+	background:url(quote_decoration.png) no-repeat top left;	
+}
+
+/* start message boxes types */
+.greenbox-wrapper {
+	border:1px solid #334d03;
+	float:left;
+}
+.greenbox {
+	background:url(green_texture.gif) repeat top center;
+	border:1px solid #171717;
+	color:#c3da99;
+}
+.greenbox a {
+	color:#c3da99;
+	text-decoration:underline;	
+}
+.bluebox-wrapper {
+	border:1px solid #084967;
+	float:left;
+}
+.bluebox {
+	background:url(blue_texture.gif) repeat top center;
+	border:1px solid #171717;
+	color:#c2e0ed;
+}
+.bluebox a {
+	color:#c2e0ed;
+	text-decoration:underline;	
+}
+.orangebox-wrapper {
+	border:1px solid #6c4c00;
+	float:left;
+}
+.orangebox {
+	background:url(orange_texture.gif) repeat top center;
+	border:1px solid #171717;
+	color:#eac557;
+}
+.orangebox a {
+	color:#eac557;
+	text-decoration:underline;	
+}
+.redbox-wrapper {
+	border:1px solid #5f0f0f;
+	float:left;
+}
+.redbox {
+	background:url(red_texture.gif) repeat top center;
+	border:1px solid #171717;
+	color:#f29d9d;
+}
+.redbox a {
+	color:#f29d9d;
+	text-decoration:underline;	
+}
+/* end message boxes types */
+
+/* code tag decoration */
+code {
+	background:#424242 url(code_bg.gif) repeat scroll 0 0;
+	border:1px solid #2d2d2d;
+	border-bottom:0px;
+	color:#fff;
+}
+/* start blog styles */
+.bcateg {
+	color:#868686;	
+}
+.blog-block h2 a {
+	color:#d2d2d2;	
+}
+.blog-block h2 a:hover {
+	color:#f0f0f0;	
+	background:#242424;
+}
+.bdate {
+	background:url(default_circle.png) no-repeat top left;	
+	color:#242424;
+}
+.btn-oposite a {
+	background:#242424;	
+	color:#eaeaea;			
+}
+.btn-oposite a:hover {
+	background:#fff600;		/* when hover, it swithes to the main skin color */
+	color:#242424 !important;		
+}
+.blog-block .more-link {
+	background:#fff600;
+	color:#242424;		
+}
+.blog-block .more-link:hover {
+	background:#242424;	
+	color:#eaeaea;			
+}
+/* end blog styles */
+
+/* start pagination */
+.wp-pagenavi {
+	padding:1px;	
+}
+.wp-pagenavi a, .wp-pagenavi a:link,.wp-pagenavi a:visited,.wp-pagenavi a:active,.wp-pagenavi span.pages,.wp-pagenavi span.current,.wp-pagenavi span.extend {
+	background:#050505;
+	color:#eaeaea;	
+}
+.wp-pagenavi a:hover, .wp-pagenavi span.current {	
+	background:#fff600;
+	color:#242424 !important;
+}
+/* end pagination */
+
+.inputError, input[type="text"].inputError {
+	border:1px solid #782c2c;
+}
+
+/* a couple of elements with background texture */
+.social ul, .blog-comment-fieldset, .port1-list li, .port2-list li, .gallery-list li, .border-texture, .toggle-content .block, .wp-pagenavi, .half-box {
+	background:url(border_texture.gif) repeat top left;		
+}
+/* start portfolio styles */
+.hframe-details {
+	background:url(pdetails.png) no-repeat top left;
+}
+.hframe-zoom {
+	background:url(pzoom.png) no-repeat top left;
+}
+.hframe-video {
+	background:url(pvideo.png) no-repeat top left;
+}
+.port1-content {
+	background:#171717;	
+}
+.port1-content h3 a {
+	color:#d2d2d2;
+}
+.port1-content h3 a:hover {
+	color:#f0f0f0;
+	background:#242424;	
+	text-decoration:none;
+}
+.port1-list .more-link {
+	color:#1a1a1a;
+	background:url(default_circle.png) no-repeat top left;	
+}
+.port1-list .more-link:hover {
+	color:#fff;	
+}
+
+/* end portfolio styles */
+
+.hrame-nojs h4 a {
+	color:#d2d2d2;
+}
+.hrame-nojs h4 a:hover {
+	color:#f0f0f0;		
+}
+.port1-list li img, .port2-list li img, .gallerylist li img, .gallery-list li img {
+	border:1px solid #424242;		
+}
+/* start toggle styles */
+h6.toggle a {
+	color:#d2d2d2;
+	border-bottom:1px solid #424242;
+	background:url(toggle_icon.png) no-repeat 0 6px;
+}
+.toggle-content .block {
+	border-bottom:1px solid #424242;		
+	color:#c1c1c1;
+}
+/* end toggle styles */
+.btn-skin a {
+	background:#fff600;	
+}
+
+/* start footer styles */
+#footer {
+	background:#050505 url(ftop_decoration.gif) repeat-x top center;		
+}
+.fbox h6 {
+	color:#afafaf !important;	
+}
+.fbottom {
+	background:none !important;	/* disables the textured background from the footer copyright area */
+}
+/* end footer styles */
+
+/* start tabs */
+.idTabs {
+	border-bottom:3px solid #272727;	
+}
+.idTabs li, .idTabs li a {
+	background:#424242;
+	color:#d2d2d2;
+}
+.idTabs li a:hover {
+	background:#fff600;
+	color:#424242;
+}
+.idTabs li .selected, .idTabs li .selected:hover {
+	background:#272727;
+	color:#fff600;	
+}
+/* end tabs */

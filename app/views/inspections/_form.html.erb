@@ -1,3 +1,5 @@
+<br />
+<div class="line"></div>
 <%= form_for(@inspection) do |f| %>
   <% if @inspection.errors.any? %>
     <div id="error_explanation">
@@ -12,73 +14,74 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :date %><br />
+    <%= f.label :date, "Inspection Date" %><br />
     
       <%= f.text_field :date %>
     
   </div>
-  <div class="field">
-    <%= f.label :animal_id %><br />
-    
-      <%= f.text_field :animal_id %>
-    
+	<div class="field" style="display:none;">
+    <%= f.label :animal %><br />
+    <%= f.text_field :animal_id %>
   </div>
+
   <div class="field">
-    <%= f.label :length %><br />
+    <%= f.label :length, "Animal Length" %><br />
     
       <%= f.text_field :length %>
     
   </div>
   <div class="field">
-    <%= f.label :weight %><br />
+    <%= f.label :weight, "Animal Weight" %><br />
     
       <%= f.text_field :weight %>
     
   </div>
   <div class="field">
-    <%= f.label :disease %><br />
+    <%= f.label :disease, "Signs of Disease?" %><br />
     
-      <%= f.check_box :disease %>
+      <%= f.check_box :disease %> Yes
     
   </div>
   <div class="field">
     <%= f.label :temperment %><br />
     
-      <%= f.text_field :temperment %>
+      <select name="inspection[temperment]">
+				<option></option>
+				<option>Friendly</option>
+				<option>Indifferent</option>
+				<option>Shy</option>
+				<option>Nervous</option>
+				<option>Aggressive</option>
+				<option>Biter</option>
+			</select>
     
   </div>
+	<br />
+	<h5>Areas Checked</h5>
+	<p>Did you do a close examination of the animal?</p>
   <div class="field">
-    <%= f.label :mouth %><br />
+
+      <%= f.check_box :mouth %> Mouth
+
     
-      <%= f.check_box :mouth %>
+      <%= f.check_box :vent %> Vent
+
     
-  </div>
-  <div class="field">
-    <%= f.label :vent %><br />
-    
-      <%= f.check_box :vent %>
-    
-  </div>
-  <div class="field">
-    <%= f.label :eyes %><br />
-    
-      <%= f.check_box :eyes %>
-    
-  </div>
-  <div class="field">
-    <%= f.label :belly %><br />
-    
+      <%= f.check_box :eyes %> Eyes
+    </div>
+		<div class="field">
+			 <%= f.label :belly %> <br />
       <%= f.text_field :belly %>
-    
-  </div>
+		</div>
+
   <div class="field">
-    <%= f.label :outcome %><br />
+    <%= f.label :outcome, "Notes and summary of conditions." %><br />
     
       <%= f.text_area :outcome %>
     
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit %><br /><br />
   </div>
 <% end %>
 <script>
