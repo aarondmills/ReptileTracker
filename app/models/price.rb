@@ -1,4 +1,5 @@
 class Price < ActiveRecord::Base
-	belongs_to :quarterly_report
+
+	belongs_to :breed
 
 end
